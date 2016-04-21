@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ScanQRCodeView.h
 //  CWScanQRCode
 //
 //  Created by 陆尘风 on 16/4/21.
@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ScanQRCodeView : UIView
 
+//镂空面积
+@property (nonatomic, assign)CGRect hollowRect;
 
 @end
-

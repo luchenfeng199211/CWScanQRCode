@@ -9,10 +9,13 @@
 /* Begin PBXBuildFile section */
 		EEB96D0B1CC8754800A7D803 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EEB96D0A1CC8754800A7D803 /* main.m */; };
 		EEB96D0E1CC8754800A7D803 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EEB96D0D1CC8754800A7D803 /* AppDelegate.m */; };
-		EEB96D111CC8754800A7D803 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEB96D101CC8754800A7D803 /* ViewController.m */; };
-		EEB96D141CC8754800A7D803 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEB96D121CC8754800A7D803 /* Main.storyboard */; };
 		EEB96D161CC8754800A7D803 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEB96D151CC8754800A7D803 /* Assets.xcassets */; };
-		EEB96D191CC8754800A7D803 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEB96D171CC8754800A7D803 /* LaunchScreen.storyboard */; };
+		EEB96D251CC8788700A7D803 /* ScanQRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEB96D241CC8788700A7D803 /* ScanQRCodeViewController.m */; };
+		EEB96D271CC87A1600A7D803 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEB96D261CC87A1600A7D803 /* LaunchScreen.storyboard */; };
+		EEB96D2A1CC87AB900A7D803 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEB96D291CC87AB900A7D803 /* HomeViewController.m */; };
+		EEB96D2C1CC8871C00A7D803 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEB96D2B1CC8871C00A7D803 /* AVFoundation.framework */; };
+		EEB96D311CC8A7AC00A7D803 /* ScanQRCodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = EEB96D301CC8A7AC00A7D803 /* ScanQRCodeView.m */; };
+		EEB96D341CC8B62900A7D803 /* ScanQRCodeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EEB96D331CC8B62900A7D803 /* ScanQRCodeManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +23,20 @@
 		EEB96D0A1CC8754800A7D803 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EEB96D0C1CC8754800A7D803 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EEB96D0D1CC8754800A7D803 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		EEB96D0F1CC8754800A7D803 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		EEB96D101CC8754800A7D803 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		EEB96D131CC8754800A7D803 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EEB96D151CC8754800A7D803 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		EEB96D181CC8754800A7D803 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EEB96D1A1CC8754800A7D803 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEB96D201CC876B500A7D803 /* Defines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Defines.h; sourceTree = "<group>"; };
+		EEB96D211CC876DE00A7D803 /* CWScanQRCode.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CWScanQRCode.pch; sourceTree = "<group>"; };
+		EEB96D231CC8788700A7D803 /* ScanQRCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanQRCodeViewController.h; sourceTree = "<group>"; };
+		EEB96D241CC8788700A7D803 /* ScanQRCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanQRCodeViewController.m; sourceTree = "<group>"; };
+		EEB96D261CC87A1600A7D803 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EEB96D281CC87AB900A7D803 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		EEB96D291CC87AB900A7D803 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		EEB96D2B1CC8871C00A7D803 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		EEB96D2F1CC8A7AC00A7D803 /* ScanQRCodeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanQRCodeView.h; sourceTree = "<group>"; };
+		EEB96D301CC8A7AC00A7D803 /* ScanQRCodeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanQRCodeView.m; sourceTree = "<group>"; };
+		EEB96D321CC8B62900A7D803 /* ScanQRCodeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanQRCodeManager.h; sourceTree = "<group>"; };
+		EEB96D331CC8B62900A7D803 /* ScanQRCodeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanQRCodeManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEB96D2C1CC8871C00A7D803 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +54,9 @@
 		EEB96CFD1CC8754800A7D803 = {
 			isa = PBXGroup;
 			children = (
+				EEB96D2E1CC8A78B00A7D803 /* ScanQRCodeLayout */,
+				EEB96D221CC8784F00A7D803 /* Controllers */,
+				EEB96D2D1CC8873800A7D803 /* Framework */,
 				EEB96D081CC8754800A7D803 /* CWScanQRCode */,
 				EEB96D071CC8754800A7D803 /* Products */,
 			);
@@ -60,11 +75,8 @@
 			children = (
 				EEB96D0C1CC8754800A7D803 /* AppDelegate.h */,
 				EEB96D0D1CC8754800A7D803 /* AppDelegate.m */,
-				EEB96D0F1CC8754800A7D803 /* ViewController.h */,
-				EEB96D101CC8754800A7D803 /* ViewController.m */,
-				EEB96D121CC8754800A7D803 /* Main.storyboard */,
+				EEB96D261CC87A1600A7D803 /* LaunchScreen.storyboard */,
 				EEB96D151CC8754800A7D803 /* Assets.xcassets */,
-				EEB96D171CC8754800A7D803 /* LaunchScreen.storyboard */,
 				EEB96D1A1CC8754800A7D803 /* Info.plist */,
 				EEB96D091CC8754800A7D803 /* Supporting Files */,
 			);
@@ -74,9 +86,41 @@
 		EEB96D091CC8754800A7D803 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EEB96D211CC876DE00A7D803 /* CWScanQRCode.pch */,
+				EEB96D201CC876B500A7D803 /* Defines.h */,
 				EEB96D0A1CC8754800A7D803 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EEB96D221CC8784F00A7D803 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EEB96D231CC8788700A7D803 /* ScanQRCodeViewController.h */,
+				EEB96D241CC8788700A7D803 /* ScanQRCodeViewController.m */,
+				EEB96D281CC87AB900A7D803 /* HomeViewController.h */,
+				EEB96D291CC87AB900A7D803 /* HomeViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EEB96D2D1CC8873800A7D803 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				EEB96D2B1CC8871C00A7D803 /* AVFoundation.framework */,
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
+		EEB96D2E1CC8A78B00A7D803 /* ScanQRCodeLayout */ = {
+			isa = PBXGroup;
+			children = (
+				EEB96D2F1CC8A7AC00A7D803 /* ScanQRCodeView.h */,
+				EEB96D301CC8A7AC00A7D803 /* ScanQRCodeView.m */,
+				EEB96D321CC8B62900A7D803 /* ScanQRCodeManager.h */,
+				EEB96D331CC8B62900A7D803 /* ScanQRCodeManager.m */,
+			);
+			path = ScanQRCodeLayout;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,9 +180,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EEB96D191CC8754800A7D803 /* LaunchScreen.storyboard in Resources */,
 				EEB96D161CC8754800A7D803 /* Assets.xcassets in Resources */,
-				EEB96D141CC8754800A7D803 /* Main.storyboard in Resources */,
+				EEB96D271CC87A1600A7D803 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,32 +192,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EEB96D111CC8754800A7D803 /* ViewController.m in Sources */,
+				EEB96D311CC8A7AC00A7D803 /* ScanQRCodeView.m in Sources */,
 				EEB96D0E1CC8754800A7D803 /* AppDelegate.m in Sources */,
 				EEB96D0B1CC8754800A7D803 /* main.m in Sources */,
+				EEB96D251CC8788700A7D803 /* ScanQRCodeViewController.m in Sources */,
+				EEB96D341CC8B62900A7D803 /* ScanQRCodeManager.m in Sources */,
+				EEB96D2A1CC87AB900A7D803 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		EEB96D121CC8754800A7D803 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EEB96D131CC8754800A7D803 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		EEB96D171CC8754800A7D803 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EEB96D181CC8754800A7D803 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		EEB96D1B1CC8754800A7D803 /* Debug */ = {
@@ -261,7 +288,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: 忠 文 (ZLP9655BJQ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: 忠 文 (ZLP9655BJQ)";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/CWScanQRCode/CWScanQRCode.pch";
 				INFOPLIST_FILE = CWScanQRCode/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.newzone.CWScanQRCode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -272,7 +303,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/CWScanQRCode/CWScanQRCode.pch";
 				INFOPLIST_FILE = CWScanQRCode/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.newzone.CWScanQRCode;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 
+#import "HomeViewController.h"
+
 @interface AppDelegate ()
 
 @end
@@ -16,7 +18,16 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor clearColor];
+    [self.window makeKeyAndVisible];
     // Override point for customization after application launch.
+    
+    HomeViewController *homeVC = [[HomeViewController alloc] init];
+    UINavigationController *homeNav = [[UINavigationController alloc] initWithRootViewController:homeVC];
+//    homeNav.navigationBar.hidden = YES;
+    self.window.rootViewController = homeNav;
+    
     return YES;
 }
 

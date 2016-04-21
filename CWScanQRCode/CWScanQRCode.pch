@@ -1,0 +1,22 @@
+//
+//  CWScanQRCode.pch
+//  CWScanQRCode
+//
+//  Created by 陆尘风 on 16/4/21.
+//  Copyright © 2016年 陆尘风. All rights reserved.
+//
+
+#ifndef CWScanQRCode_pch
+#define CWScanQRCode_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#ifdef __OBJC__
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "Defines.h"
+
+#endif
+
+#endif /* CWScanQRCode_pch */
