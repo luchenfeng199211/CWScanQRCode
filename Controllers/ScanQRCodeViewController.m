@@ -28,14 +28,14 @@
     
     CGFloat oneDeviceW = SCREEN_SIZE.width - 100;
     CGFloat oneDeviceH = oneDeviceW;//oneDeviceW*0.3;
-    CGFloat oneDeciceX = 40;
-    CGFloat oneDeciceY = 0;
+    CGFloat oneDeviceX = SCREEN_SIZE.width/2.0 - oneDeviceW/2.0;
+    CGFloat oneDeviceY = 0;
     if (self.view.bounds.size.height < SCREEN_SIZE.height) {
-        oneDeciceY = SCREEN_SIZE.height/2.0 - oneDeviceH/2.0 - 64;
+        oneDeviceY = SCREEN_SIZE.height/2.0 - oneDeviceH/2.0 - 64;
     }else{
-        oneDeciceY = SCREEN_SIZE.height/2.0 - oneDeviceH/2.0;
+        oneDeviceY = SCREEN_SIZE.height/2.0 - oneDeviceH/2.0;
     }
-    CGRect hollowRect = CGRectMake(oneDeciceX, oneDeciceY, oneDeviceW, oneDeviceH);
+    CGRect hollowRect = CGRectMake(oneDeviceX, oneDeviceY, oneDeviceW, oneDeviceH);
     [[ScanQRCodeManager shareManager] setHollowRect:hollowRect PreView:bgView];
     [[ScanQRCodeManager shareManager] startScanWithResultBlock:^(NSString *resultStr) {
         UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"" message:[NSString stringWithFormat:@"%@",resultStr] delegate:nil cancelButtonTitle:@"确定" otherButtonTitles: nil];
